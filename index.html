@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Chrome, Firefox OS and Opera -->
+<meta name="theme-color" content="#4285f4">
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#4285f4">
+<!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4285f4">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Coda:wght@400;800&family=Roboto&family=Squada+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+
+    <link href="style.css" rel="stylesheet">
+    <title>cvNumeriqueFinal</title>
+</head>
+<body>
+<!-- ___BAR DE NAVIGATION___________________________ -->
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)"
+                class="closebtn" onclick="closeNav()">
+                ×
+            </a>
+            <div class="overlay-content">
+                <a href="#about" onclick="closeNav()">⌂</a>
+                <a href="#profile" onclick="closeNav()">About Me</a>
+                <a href="#skills" onclick="closeNav()">Skills</a>
+                <a href="#experience" onclick="closeNav()">Experience</a>
+                <a href="#training" onclick="closeNav()">Training</a>
+                <a href="#project" onclick="closeNav()">Projet</a>
+                <a href="#CV" onclick="closeNav()">CV Download</a>
+                <a href="#contact" onclick="closeNav()">Contact</a>
+            </div>
+        </div>
+        <span class="openBurger" style="font-size:40px;cursor:pointer" 
+                onclick="openNav()">
+            ≡
+        </span>
+<!-- ___FIN BAR DE NAVIGATION___________________________ -->
+<main class="bandeau container-fluid">
+<!-- ___DEBUT PAGE ACCUEIL ___________________________ -->
+          <div id="about" class="accueilGeneral container-fluid w-100 p-3" data-spy="scroll" data-target="prolfile">
+              <div class="row align-items-center position-relative">
+                <!-- test sur la grosseur du texte -->
+                <div class="row row align-items-center position-relative">
+                <div class="triangleOrange"></div>
+                  <div class="pageAccueil col-12">
+                      <div class="row">
+                        <div class="hero col-12 ">
+                              <h1 class="display-4">Héléna-Charlotte DOMLAN</h1>
+                              <!-- <img src="image/bandeauB.png" class="img-fluid" alt=""> -->
+                              <h2 class="webDevEffect quote animate__animated animate__slideInDown">Web Development and UI/UX Design</h2>
+                              
+                            </div>                   
+                        <div class="col-12 ul-social text-center social-box mt-2">
+                          <ul>
+                            <li class="li-social-links" style="list-style:none">
+                                <a class="social" href="https://github.com/Lnac" target="_blank"><img src="image/github.png" class="img-fluid text-center" alt=""></a>
+                                <a class="social" href="https://www.linkedin.com/in/h%C3%A9l%C3%A9na-charlotte-d-70a1b9116/" target="_blank"><img src="image/linkedin.png" class="img-fluid text-center" alt=""></a>
+                                <a class="social" href="https://www.krop.com/lna-charlotte/" target="_blank"><img src="image/Portfolio32.png" class="img-fluid text-center" alt=""></a>
+                              </li>
+                          </ul>
+                        </div>
+
+                        <div class="col-12">
+                          <img class="logoElephant img-fluid" src="image/logoLNAelephantnobg.png"  alt="elephant">
+                        </div>
+                        <div class="triangleBlack heroTriangle text-center ">                        
+                            <a href="#profile">                          
+                              <img src="image/flecheBas.png" class="arrow img-fluid" alt="t">
+                            </a>
+                        </div>                      
+                      </div>
+                  </div>
+              </div>
+            </div>            
+          </div>
+</main>
+
+<!-- ___DEBUT PAGE ABOUT/PROFIL ___________________________ -->
+<section class="profile text-center">
+  <div id="profile">
+      <div class="jumbotron text-center bg-transparent ">
+          <h2 class=" d-inline">ABOUT ME</h2>
+      </div>
+          <div class="container quote animate__animated animate__bounce">        
+              <div class="row">
+                  <div class="row">
+                    <div class="col-12 col-md-4  col-lg-4 d-flex">
+                      <div class="card text-center flex-fill bg-transparent border border-dark rounded my-2">
+                        <div class="card-body">
+                          <div class="mt-4 mb-4">
+                            <img src="image/noun_experiment_2832429.png" class="card-img-top w-50 mt-2" alt="light">
+                          </div>
+                          <hr class="mx-4">
+                          <h3 class="card-title text-center">Développement et UI/UX design</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 sm-mt-4 col-md-4  col-lg-4 d-flex my-2">
+                      <div class="card text-center flex-fill bg-transparent border border-dark rounded">
+                        <div class="mt-2">
+                          <img src="image/noun_plan_2832451.png" class="card-img-top sm-w-25 w-50 mt-2" alt="planning">
+                        </div>
+                        <div class="card-body">
+                          <!-- <p class="card-text">Habilités</p> -->
+                          <h3 class="card-title text-center">Aptitude pour l’organisation, le suivi d’un projet et le travail en équipe</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-4 d-flex my-2">
+                      <div class="card flex-fill text-center bg-transparent border border-dark rounded">
+                        <div class="mt-2">
+                          <img src="image/noun_marketing_2832435.png" class="card-img w-50 mt-2" alt="fireman">
+                        </div>
+                        <div class="card-body">
+                          <hr>
+                            <!-- <p class="card-text">Aptitudes</p> -->
+                            <h3 class="card-title text-center">Sens des responsabilités et de l’initiative</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row"></div>
+                      <div class="col-12">
+                          <div class="section-title">
+                              <h2 class="text-left">Hello World !</h2>
+                              <p class="text-left">Bienvenue sur ma page, je suis actuellement en recherche d'un stage pour une période de 6 mois.</p>
+                          </div>
+                      </div>
+                    <div class="triangleBlack triangleProfile"> 
+                      <a href="#skills"> <img src="image/flecheBas.png" class="arrow img-fluid" data-spy="scroll" data-target="about" alt="fleche orientée vers le bas">
+                      </a>
+                    </div>
+                </div>
+            </div>
+      </div>
+  </div>
+</section>
+<!--___FIN PAGE ABOUT/PROFIL ___________________________ -->
+
+<!-- ___DEBUT PAGE SKILLS ___________________________ -->
+<section class="skills text-center">
+  <div id="skills">
+    <div class="jumbotron text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+      <h2 class=" d-inline">SKILLS</h2>
+    </div>
+    <div>
+      <figure class="figure" style="margin-bottom: 0px;">
+        <img class="mx-4 my-4 w-25" src="image/noun_Muscle_3420179.png" alt="illustration project">
+      </figure>
+    </div>
+        <!-- <div class="container mt-5  mb-5 text-center bg-transparent border border-dark text-dark .col-md-6 .offset-md-3">
+                <div class="text-center mx-4 mx-auto text-dark">
+                  <figure class="figure">
+                    <img class="mx-4 my-4 w-25" src="image/noun_Muscle_3420179.png" alt="illustration multiple competences">
+                  </figure> 
+                  <p class="mt-8 mb-8 text-dark font-weight-bolder text-dark ">Techno</p>
+                      <div class="inner text-center mx-4 mx-auto mb-8 text-dark">
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/html-open-file-format.png" alt="...">
+                              <figcaption class="figure-caption text-dark">HTML</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/css-file-format-with-brackets.png" alt="...">
+                              <figcaption class="figure-caption text-dark">CSS</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/js-file-format-symbol.png" alt="...">
+                              <figcaption class="figure-caption text-dark">JS</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/php.png" alt="...">
+                              <figcaption class="figure-caption text-dark">PHP</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/sql-open-file-format.png" alt="...">
+                              <figcaption class="figure-caption text-dark">MYSQL</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/jquery.png" alt="...">
+                              <figcaption class="figure-caption text-dark">JQUERRY</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/bootstrap.png" alt="...">
+                              <figcaption class="figure-caption text-dark">Bootstrap</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/wordpress-2.png" alt="...">
+                              <figcaption class="figure-caption text-dark">WORDPRESS</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/sass.png" alt="...">
+                              <figcaption class="figure-caption text-dark">SASS</figcaption>
+                            </figure>
+                            <figure class="figure">
+                              <img class="mx-4 my-4" src="image/adobe-logo.png" alt="...">
+                              <figcaption class="figure-caption text-dark">PACK ADOBE</figcaption>
+                            </figure>
+                            <p class="mt-5 text-dark font-weight-bolder text-dark">COMPÉTENCES</p>
+                            <hr class="mb-4">
+                      </div>
+                <p>/// Conception et intégration website, emailing</p>
+                <p>/// Réalisation maquettes sites web, bannières publicitaires</p>
+                <p>///Projet d’étude client (front, react, material UI) organisé en daily stand-up et méthode agile</p>
+                <p>/// Illustration graphique, création d’identité visuelle, plaquettes commerçiales</p>
+                <p>/// Création et animation de pages sur les réseaux</p>
+                <p>/// Rédaction de brèves, articles, interviews, newsletters,communiqués de presses</p>
+                <p class="mb-5">/// Langues parlées : Français/ Anglais</p>
+          </div>
+        </div> -->
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 bg-transparent text-dark">
+              <div class="col-lg-12my-lg-0 border border-dark rounded">
+                    <div class="text-center mx-4 mx-auto text-dark">
+                          <div class="inner text-center mx-4 mx-auto mb-8 text-dark">
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/html-open-file-format.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">HTML</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/css-file-format-with-brackets.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">CSS</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/js-file-format-symbol.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">JS</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/php.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">PHP</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/sql-open-file-format.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">MYSQL</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/jquery.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">JQUERRY</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/bootstrap.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">Bootstrap</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/wordpress-2.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">WORDPRESS</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/sass.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">SASS</figcaption>
+                                </figure>
+                                <figure class="figure">
+                                  <img class="mx-4 my-4 w-50" src="image/adobe-logo.png" alt="...">
+                                  <figcaption class="figure-caption text-dark">PACK ADOBE</figcaption>
+                                </figure>
+                          </div>
+              </div>
+            </div>
+            </div>
+            <div class="competence col-lg-6 bg-transparent text-dark" style="height: 668,4px;">
+              <div class="col-lg-12 border border-dark rounded">
+              <div class="text-center mx-4 mx-auto text-dark">
+                    <div class="inner text-center mx-4 mx-auto mb-8 text-dark">
+                          <p class="mt-5 text-dark font-weight-bolder text-dark">★★★ COMPÉTENCES ★★★</p>
+                          <hr class="mb-4 px-5">
+                    </div>
+                      <p class="text-justify px-4"><span>⌁ </span>Conception et intégration website, emailing</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Réalisation maquettes sites web, bannières publicitaires</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Projet d’étude client (front, react, material UI) organisé en daily stand-up et méthode agile</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Illustration graphique, création d’identité visuelle, plaquettes commerçiales</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Création et animation de pages sur les réseaux</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Rédaction de brèves, articles, interviews, newsletters, communiqués de presses</p>
+                      <p class="text-justify px-4"><span>⌁ </span>Langues parlées : Français/ Anglais</p>
+                      <figure class="figure">
+                          <img class="mx-4 my-4 w-25" src="image/noun_desktop computer_3420142.png" alt="illustration multiple competences">
+                      </figure> 
+              </div>
+            </div>
+            </div>
+          </div>
+        </div> 
+  </div>
+    <div class="triangleBlack heroSkills text-center col-2">                        
+      <a href="#experience">                          
+        <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+      </a>
+  </div>
+</section>
+<!--___FIN PAGE SKILLS ___________________________ -->
+
+
+<!-- ___DEBUT PAGE EXPERIENCES/FORMATION ___________________________ -->
+<!-- <section class="experience section " id="resume">
+  <div id="experience">
+    <div class="jumbotron text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+      <h2 class="d-inline">FORMATIONS</h2>
+    </div>
+    <figure class="figure">
+      <img class="mx-4 my-4 w-25" src="image/noun_success_2832452.png" alt="illustration multiple competences">
+    </figure> 
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 m-15px-tb offsett-2">
+              <div class="ok resume-box border border-dark rounded p-2">
+                  <ul>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2021</span>
+                      <h5>DESCODEUSES</h5>
+                      <p>Formation développeuse - École du numérique axée sur la pratique et la réalisation de réel projet autour du développement</p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span class="time">2019</span>
+                    <h5>Illustration CAP (Cours d'adultes de Paris)</h5>
+                    <p>Illustration (Etude de differents registres techniques via l'image narrative / expression du trait graphique, croquis)</p>
+                </li>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2018</span>
+                      <h5>Wild code School</h5>
+                      <p>École du numérique axée sur la pratique et la réalisation de réel projet autour du développement</p>
+                  </li>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2011</span>
+                      <h5>Master 2 Creation et Edition Numériques - Université Paris 8 | Vincennes - Saint-Denis</h5>
+                      <p>Métiers de l’Internet et du cross médias : méthodes et procédures d’évaluation des médias numériques, des scénarisations, des écritures crossmédias dans le domaine patrimonial, scientifique et culturel</p>
+                  </li>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2009</span>
+                      <h5>Master 1 Publicité option Direction Artistique - Sup de Pub INSEEC</h5>
+                      <p>École de Communication - Option Direction Artistique traduction d'idées en images (infographie, story-boards…) et de conception d'éléments visuels.</p>
+                  </li>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2007</span>
+                      <h5>Licence Information et Communication - Université Sorbonne Nouvelle | Paris 3</h5>
+                      <p class="mb-5">Disciplines étudiant les moyens et situations de communication (logique, linguistique, sémiologie, sémantique, psychologie, sociologie, anthropologie, histoire des systèmes médiatico-contemporains, droit et éco médias)</p>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="col-lg-6 m-15px-tb ">
+              <div class="resume-box border border-dark rounded p-4">
+                  <ul>
+                      <li>
+                          <div class="icon">
+                              <i class="fas fa-briefcase"></i>
+                          </div>
+                          <span class="time">2019</span>
+                          <h5>Graphiste freelance</h5>
+                          <p class="text-left">Réalisation de maquettes de sites web, de bannières publicitaires. <br>Création d’affiches, flyers, spot publicitaire.</p>
+                        </li>
+                      <li>
+                          <div class="icon">
+                              <i class="fas fa-briefcase"></i>
+                          </div>
+                          <span class="time">2014 à 2015</span>
+                          <h5>Chargée de Communication - Paris</h5>
+                          <p class="text-left">Mairie de Paris <br>(Portail Paris Fournisseurs Sequana)<br>
+                            - Promotion des services auprès de l’ensemble des directions de la Ville <br>
+                            - Organisation d’événements internes et externes (réalisation de projets évènementiels)<br>
+                            - Rédaction d’articles, interviews, newsletters, communiqués de presses<br>
+                            - Création et animation de pages sur les réseaux </p>
+                      </li>
+                      <li>
+                          <div class="icon">
+                              <i class="fas fa-briefcase"></i>
+                          </div>
+                          <span class="time">2013 à 2014</span>
+                          <h5>Graphiste freelance - Montréal, QC</h5>
+                          <p class="text-left">
+                            DarkPixel Studios Montréal <br>(Agence en communication digitales)<br>
+                            - Création d’identité visuelle<br>
+                            - Illustrations graphiques<br>
+                            - Conception de plaquette commerciale et vidéo promotionnelle</p>
+                      </li>
+                      <li>
+                        <div class="icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <span class="time">2012 à 2013</span>
+                        <h5>Webdesign - Paris</h5>
+                        <p class="text-left">
+                            LES ECHOS (Journal Économique)<br>
+                            - Optimisation du site web en HTML/CSS<br> 
+                            - Conception & intégration des emailings<br>
+                            - Promotion du journal et illustration d’articles<br> 
+                    </li>
+                    <li>
+                      <div class="icon">
+                          <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2010 à 2012</span>
+                      <h5>Graphisme & Communication </h5>
+                      <p class="text-left">
+                        - Voyages Inédits (Agence de voyages)<br> 
+                        - OZE (Restaurant)<br> 
+                        - Messagers de la Paix (ONG Bénin)<br> 
+                        - FNAR (Fédération national des associations régionales)<br>
+                        </p>
+                  </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="triangleBlack triangleExperience text-center col-2">                        
+            <a href="#project">                          
+              <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+            </a>
+        </div>
+      </div>
+  </div>
+  </div>
+</section> -->
+
+<!-- ___DEBUT PAGE EXPERIENCES ___________________________ -->
+<section class="experience section TESTEXPE2" id="resume">
+  <div id="experience">
+    <div class="jumbotron jumbotronExperience text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+      <h2 class="d-inline">EXPERIENCE</h2>
+    </div>
+    <figure class="figure" style="margin-bottom: 0px;">
+      <img class="mx-2 my-4 w-25" src="image/noun_company_2832430.png" alt="illustration multiple competences">
+    </figure> 
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-6 m-15px-tb offsett-2">
+              <div class="ok resume-box border border-dark rounded p-2" style="height: 641px;">
+                  <ul>
+                    <li>
+                      <div class="icon">
+                          <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2019</span>
+                      <h5>Graphiste freelance</h5>
+                      <p class="text-left">Réalisation de maquettes de sites web, de bannières publicitaires. <br>Création d’affiches, flyers, spot publicitaire.</p>
+                    </li>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-briefcase"></i>
+                      </div>
+                      <span class="time">2014 à 2015</span>
+                      <h5>Chargée de Communication - Paris</h5>
+                      <p class="text-left">Mairie de Paris <br>(Portail Paris Fournisseurs Sequana)<br>
+                        - Promotion des services auprès de l’ensemble des directions de la Ville <br>
+                        - Organisation d’événements internes et externes (réalisation de projets évènementiels)<br>
+                        - Rédaction d’articles, interviews, newsletters, communiqués de presses<br>
+                        - Création et animation de pages sur les réseaux </p>
+                  </li>
+                </ul>
+              </div>
+          </div>
+          <div class="col-lg-6 m-15px-tb offsett-2">
+            <div class="ok resume-box border border-dark rounded p-2">
+                <ul>
+                  <li>
+                    <div class="icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <span class="time">2013 à 2014</span>
+                    <h5>Graphiste freelance - Montréal, QC</h5>
+                    <p class="text-left">
+                      DarkPixel Studios Montréal <br>(Agence en communication digitales)<br>
+                      - Création d’identité visuelle<br>
+                      - Illustrations graphiques<br>
+                      - Conception de plaquette commerciale et vidéo promotionnelle</p>
+                </li>
+                <li>
+                  <div class="icon">
+                      <i class="fas fa-briefcase"></i>
+                  </div>
+                  <span class="time">2012 à 2013</span>
+                  <h5>Webdesign - Paris</h5>
+                  <p class="text-left">
+                      LES ECHOS (Journal Économique)<br>
+                      - Optimisation du site web en HTML/CSS<br> 
+                      - Conception & intégration des emailings<br>
+                      - Promotion du journal et illustration d’articles<br> 
+              </li>
+              <li>
+                <div class="icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <span class="time">2010 à 2012</span>
+                <h5>Graphisme & Communication </h5>
+                <p class="text-left">
+                  - Voyages Inédits (Agence de voyages)<br> 
+                  - OZE (Restaurant)<br> 
+                  - Messagers de la Paix (ONG Bénin)<br> 
+                  - FNAR (Fédération national des associations régionales)<br>
+                  </p>
+            </li>
+              </ul>
+            </div>
+        </div>
+          <div class="triangleBlack triangleExperience text-center col-2">                        
+            <a href="#training">                          
+              <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+            </a>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!--___FIN PAGE EXPERIENCES___________________________ -->
+
+<!-- ___DEBUT PAGE FORMATION ___________________________ -->
+<section class="experience formation section" id="resume">
+  <div id="training">
+    <div class="jumbotron jumbotronFormation text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+      <h2 class="d-inline">TRAINING</h2>
+    </div>
+    <figure class="figure">
+      <img class="mx-4 my-0 w-25" src="image/noun_success_2832452.png" alt="illustration multiple competences">
+    </figure> 
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-4 m-15px-tb offsett-2">
+              <div class="resume-box border border-dark rounded p-2">
+                  <ul>
+                  <li>
+                      <div class="icon">
+                          <i class="fas fa-user-graduate"></i>
+                      </div>
+                      <span class="time">2021</span>
+                      <h5>DESCODEUSES</h5>
+                      <p class="text-left">Formation développeuse Web & Web mobile RNCP Niveau III- École du numérique axée sur la pratique et la réalisation de réel projet autour du développement
+                      </p>
+                  </li>
+                  <li>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span class="time">2019</span>
+                    <h5>Illustration CAP (Cours d'adultes de Paris)</h5>
+                    <p class="text-left">Etude de differents registres techniques via l'image narrative, expression du trait graphique, croquis</p>
+                </li>
+                </ul>
+              </div>
+          </div>
+          <div class="col-lg-4 m-15px-tb offsett-2">
+            <div class="ok resume-box border border-dark rounded p-2">
+                <ul>
+                <li>
+                    <div class="icon">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <span class="time">2018</span>
+                    <h5>Wild code School</h5>
+                    <p class="text-left">École du numérique axée sur la généralisation du developpement web</p>
+                </li>
+                <li>
+                  <div class="icon">
+                      <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <span class="time">2011</span>
+                  <h5>Master 2 Creation et Edition Numériques - Université Paris 8 | Vincennes - Saint-Denis</h5>
+                  <p class="text-left">Métiers de l’Internet et du cross médias : méthodes et procédures d’évaluation des médias numériques et des scénarisations et des écritures crossmédias dans le domaine patrimonial, scientifique et culturel</p>
+              </li>
+              </ul>
+            </div>
+        </div>
+          <div class="col-lg-4 m-15px-tb ">
+            <div class="resume-box border border-dark rounded p-2">
+              <ul>
+              <li>
+                  <div class="icon">
+                      <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <span class="time">2009</span>
+                  <h5>Master 1 Publicité option Direction Artistique - Sup de Pub INSEEC</h5>
+                  <p class="text-left">École de Communication - Option Direction Artistique traduction d'idées en images (infographie, story-boards…) et de conception d'éléments visuels.</p>
+              </li>
+              <li>
+                  <div class="icon">
+                      <i class="fas fa-user-graduate"></i>
+                  </div>
+                  <span class="time">2007</span>
+                  <h5>Licence Information et Communication - Université Sorbonne Nouvelle | Paris 3</h5>
+                  <p class="mb-5 text-left">Disciplines étudiant les moyens et situations de communication (logique, linguistique, sémiologie, sémantique, psychologie, sociologie, anthropologie, histoire des systèmes médiatico-contemporains, droit et éco médias)</p>
+              </li>
+            </ul>
+          </div>
+          </div>
+          <div class="triangleBlack triangleFormation text-center col-2">                        
+            <a href="#project">                          
+              <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+            </a>
+        </div>
+      </div>
+  </div>
+  </div>
+</section>
+<!--___FIN FORMATION ___________________________ -->
+
+<!-- ___DEBUT PROJECT ___________________________ -->
+<section class="project text-center">
+  <div id="project">
+      <div class="project1 jumbotron text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+        <h2 class="d-inline">PROJECTS</h2>   
+      </div>
+      <div>
+        <figure class="figure">
+          <img class="mx-4 my-4 w-25" src="image/noun_business-plan_2092009.png" alt="illustration project">
+        </figure>
+      </div>
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="card mx-3 my-5 bg-transparent" style="width: 18rem;">
+            <img class="card-img-top" src="image/demoWG.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title cardPorject">Wack a ghost</h5>
+              <p class="card-text">Game play (JavaScript/HTML/CSS) </p>
+              <a href="https://github.com/Lnac/wack_a_ghost" class="btn border border-dark text-dark">GitHub</a>
+            </div>
+          </div>
+          <div class="card mx-3 my-5 bg-transparent" style="width: 18rem;">
+            <img class="card-img-top" src="image/demoELLES.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title cardPorject">Elles</h5>
+              <p class="card-text">Website Ecommerce (JavaScript/jQuery/Bootstrap)</p>
+              <a href="https://github.com/Lnac/Elles_Projet" class="btn border border-dark text-dark">GitHub</a>
+            </div>
+          </div>
+          <div class="card mx-3 my-5 bg-transparent" style="width: 18rem;">
+            <img class="card-img-top" src="image/demoWE.gif" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title cardPorject">WeEatWorld</h5>
+              <p class="card-text">Website spécialité culinaire du monde (HTML/CSS/Bootstrap)</p>
+              <a href="https://github.com/Lnac/WeEatTheWorld" class="btn border border-dark text-dark">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+    <div class="triangleBlack triangleProject text-center col-2">                        
+    <a href="#CV">                          
+      <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+    </a>
+</div>
+</section>
+<!--___FIN PAGE PROJECT ___________________________ -->
+
+<!-- ___DEBUT CV DOWNLOAD ___________________________ -->
+<section class="donwload mb-5 text-center">
+  <div id="CV">
+      <div class="jumbotron jumbotronCV text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+        <h2 class="d-inline">CV Download</h2>
+      </div>
+      <div>
+        <figure class="figure">
+          <img class="mx-3 my-3 w-25" src="image/noun_Cloud_2833225.png" alt="illustration contact">
+        </figure> 
+      </div>
+      <div class="container">
+          <p>Vous pouvez télécharger mon cv<p>
+            <a href="image/CVweb_HELENA-C_DOMLAN-DESCODEUSES.pdf" download>
+              <img src="image/CVV2_HELENA-C_DOMLAN-DESCODEUSES.png" alt="cv" width="204" height="242">
+            </a>
+      </div>
+      <div class="triangleBlack triangleCV text-center col-2">                        
+        <a href="#contact">                          
+          <img src="image/flecheBas.png" class="arrow img-fluid" alt="fleche orientée vers le bas">
+        </a>
+      </div>
+</section>
+<!--___FIN PAGE CV DOWNLOAD ___________________________ -->
+
+
+<!-- ___DEBUT CONTACT ___________________________ -->
+<section class="contact mb-5 text-center">
+  <div id="contact">
+      <div class="contact1 jumbotron text-center bg-transparent" style="margin-bottom: 0px;padding-bottom: 0px;">
+        <h2 class="d-inline">CONTACT</h2>
+      </div>
+      <div>
+        <figure class="figure">
+          <img class="mx-3 my-3 w-25" src="image/noun_Email_2833253.png" alt="illustration contact">
+        </figure> 
+      </div>
+      <div class="container">
+          <div class="contact-clean">
+            <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/myylljpl" method="post">
+              <h5 class="text-center">Pour m'envoyer un message...</h5>
+                  <div class="form-group bg-transparent"><input class="form-control" type="text" name="name" placeholder="NOM et Prénom"></div>
+                  <div class="form-group bg-transparent"><input class="form-control" type="email" name="email" placeholder="Email"></div>
+                  <div class="form-group bg-transparent"><textarea class="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
+                  <div class="form-group  bg-light.bg-primary"><button class="btn btn-danger" type="submit">Envoyé <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                  </button></div>
+              </form>
+</section>
+
+<!--___FIN PAGE CONTACT ___________________________ -->
+
+<!--___DEBUT FOOTER ___________________________ -->
+<footer class="footer bg-dark text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-6">
+      <!-- Linkedin -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/h%C3%A9l%C3%A9na-charlotte-d-70a1b9116/" role="button">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <!-- Github -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Lnac" role="button">
+        <i class="fab fa-github"></i>
+      </a>
+      <!-- Portfolio -->
+      <a class="btn btn-outline-light btn-floating m-1" href="https://www.krop.com/lna-charlotte/" role="button">
+        <i class="fas fa-folder-open"></i>
+      </a>
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: #b11c1c;">
+    © 2021 Copyright:
+    <a class="text-white">Héléna-Charlotte DOMLAN</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!--FIN FOOTER ___________________________ -->
+
+<script type="text/javascript" src="script.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</body>
+</html>
