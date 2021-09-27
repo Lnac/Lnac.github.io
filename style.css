@@ -1,26 +1,56 @@
-html {
+html{
     scroll-behavior: smooth;
     font-size: 16px;
+}
 
-  }
-
-body {
-    
+body{
     position: absolute;
     background-image: url("image/fond1.png"), url("image/shapelined\ 2.png");
     /* width: 100%;
     height: 100%;  */
     /* background-size: cover;  */
     /* background-repeat: no-repeat; */
-    /* background-color: #ebeaead4;     */
+    /* background-color: #ebeaead4; */
+    /* body{margin-top:20px;} */
+    /* margin: auto;
+    text-align: center; */
+
 }
 
-/*____________ BAR DE NAVIGATION__________________________*/
+a { text-decoration: none !important; }
 
-#myNav {
-    z-index: 8;
+.testMenu{
+    z-index: -10 !important;
 }
-.overlay {
+
+/* .jumbotron{
+    padding: 2rem 1rem;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+
+} */
+/* 
+.figure{
+    margin-bottom: 0px;
+} */
+
+.section{
+
+}
+
+
+.rubriqueTitrePosition{
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+/*DEBUT NAVBAR
+---------------------------
+--------------------------*/
+#myNav{
+    z-index: 1000 !important;
+}
+.overlay{
     height: 0%;
     width: 100%;
     position: fixed;
@@ -31,14 +61,14 @@ body {
     transition: 1.0s;
 }
 
-.overlay-content {
+.overlay-content{
     position: relative;
     top: 25%;
     width: 100%;
     text-align: center;
 }
 
-.overlay a {
+.overlay a{
     padding: 10px;
     text-decoration: none;
     font-size: 40px;
@@ -52,40 +82,41 @@ body {
     color: black;
 }
 
-.overlay .closebtn {
+.overlay .closebtn{
     position: absolute;
     top: 10px;
     right: 35px;
     font-size: 70px;
 }
 
-.openBurger {
+.openBurger{
     position: fixed;
     margin-bottom: 0px;
+    font-size: 40px;
+    cursor: pointer;
 }
-/*____________ FIN BAR DE NAVIGATION________________*/
+/*FIN NAVBAR------------------------------------------------------------------*/
 
-/*____________ pageAccueil ________________*/
 
-h1 {
+/*DEBUT PAGE ACCUEIL HERO
+---------------------------
+--------------------------*/
+h1{
     margin: 0;
-    margin-top: 100px;
+    margin-top: 100px !important;
     text-align: center;
     color: rgb(4, 4, 4);
     font-family: 'Coda', cursive;
     /* font-family: 'Squada One', cursive; */
     font-weight: 1200;
     font-size: 20px;
-
 }
 
-.accueilGeneral {
-    /* height: 1000px;  */
+.accueilGeneral{
     height: 100vh;
-    /* height: 100%; */
 }
 
-.webDevEffect {
+.webDevEffect{
     margin-top: 10px;
     text-align: center;  
 }
@@ -100,7 +131,7 @@ h1 {
     transform: rotate(-15deg);
 }
 
-.triangleOrange {
+.triangleOrange{
     position: relative;
     z-index: 1;
     display : inline-block;
@@ -113,6 +144,11 @@ h1 {
     margin-right: auto;
     width: 8em;
 }
+
+.li-social-links{
+    list-style:none !important;
+}
+
 
 /* .triangleBlack {
     position: relative;
@@ -143,12 +179,12 @@ h1 {
     -ms-transform-origin: 50% 50%;
   } */
 
-.logoElephant {
+.logoElephant{
 position: relative;
 bottom: 50px;
 }
 
-.img arrow {
+.img arrow{
     box-shadow: 0 16px 10px -17px rgba(0, 0, 0, 0.5);
 }
 
@@ -157,7 +193,7 @@ bottom: 50px;
     bottom: 25px; 
 }
 
-.triangleBlack {
+.triangleBlack{
     
     /* top: -250px; */
     /* display : inline-block; */
@@ -251,7 +287,7 @@ bottom: 50px;
     }
 }
 
-@-webkit-keyframes animationFrames {
+@-webkit-keyframes animationFrames{
     0% {
         -webkit-transform:  translate(0px,0px)  ;
     }
@@ -275,7 +311,7 @@ bottom: 50px;
     }
 }
 
-@-o-keyframes animationFrames {
+@-o-keyframes animationFrames{
     0% {
         -o-transform:  translate(0px,0px);
     }
@@ -299,7 +335,7 @@ bottom: 50px;
     }
 }
 
-@-ms-keyframes animationFrames {
+@-ms-keyframes animationFrames{
     0% {
         -ms-transform:  translate(0px,0px);
     }
@@ -322,10 +358,14 @@ bottom: 50px;
         -ms-transform:  translate(0px,0px);
     }
 }
+/*PAGE ACCUEIL HERO------------------------------------------------------------------*/
 
-/* ____________ DEBUT PAGE ABOUT/PROFIL ___________________________ --> */
-.profile {
-    height: 100vh;
+
+/*DEBUT PAGE ABOUT/PROFIL
+---------------------------
+--------------------------*/
+.profile{
+    /* height: 100vh; */
     width: 100%;
     /* background-color: #454545e0; */
     /* background-image: url("image/triangleOrange.png");
@@ -343,7 +383,7 @@ bottom: 50px;
     /* margin-top: 50px; */
 }
 
-.profile h2 {
+.profile h2{
     color: #000000e0;
     margin-bottom: 123px;
     font-family: 'Coda';
@@ -355,7 +395,7 @@ bottom: 50px;
  z-index: -1;
 } */
 
-.section-title h2 {
+.section-title h2{
     font-weight: 700;
     /* color: #20247b; */
     color: #0f0f10;
@@ -364,7 +404,7 @@ bottom: 50px;
     border-left: 5px solid #fc5356;
     padding-left: 15px;
 }
-.section-title {
+.section-title{
     padding-bottom: 45px;
     margin-top: 85px;
 
@@ -373,21 +413,21 @@ bottom: 50px;
     margin: 0;
     font-size: 18px;
 }
+/*FIN PAGE ABOUT/PROFILE------------------------------------------------------------------*/
 
-/*____________ FIN PAGE ABOUT/PROFILE ________________*/
 
-
-/*____________ DEBUT PAGE SKILLS ___________________________ -->*/
-.skills {
+/*DEBUT PAGE SKILLS
+---------------------------
+--------------------------*/
+.skills{
     /* height: 100vh; */
     height: 1200px;
     text-align:Center;
     background: top / contain no-repeat url("image/Method Draw Image.png");
     background-size: 15%;
     background-color: #e8e8e8;
-    
 }
-.skills h2 {
+.skills h2{
     color: #000000e0;
     margin-bottom: 123px;
     font-family: 'Coda';
@@ -401,33 +441,35 @@ bottom: 50px;
     /* font-size: 20px; */
 }
 
-.heroSkills{
+.triangleSkills{
     margin-top: 50px;
 }
-/*____________ FIN PAGE SKILLS ________________*/
+
+.competence-space{
+    height: 100%;
+}
+/*FIN PAGE SKILLS----------------------------------------------------------------------------*/
 
 
-/*____________ DEBUT PAGE FORMATION/EXPERIENCE ________________*/
-.jumbotronFormation, .jumbotronExperience h2 {
+/*DEBUT PAGE FORMATION/EXPERIENCE
+------------------------------------------------------------------
+------------------------------------------------------------------*/
+.jumbotronFormation h2, .jumbotronExperience h2, .jumbotronCV h2, .project h2, .donwload h2{
     font-size: 65px; 
     /* PERTURBE LE RESPONSIVE */
     /* margin-bottom: 633px; */
 }
 
-.jumbotronFormation h2, .jumbotronCV h2 {
-    font-size: 65px; 
-}
-
-#experience, #training, #CV {
+#experience, #training, #CV{
     /* height: 100vh; */
     text-align: center;
     background: top / contain no-repeat url("image/Method Draw Image.png");
     background-size: 15%;
-    z-index: 1;
+    /* z-index: 1; */
     /* background-color: #e8e8e8; */
     /* margin-top: 106px; */
     /* margin-top: 620px; */
-    z-index: 1;
+ 
 }
 .experience .project1 .contact1 h2{
     color: #000000e0;
@@ -441,6 +483,8 @@ bottom: 50px;
     position: relative;
     top: 150px; 
 }
+.resume-box span{
+}
 
 .triangleExperience {
     margin-top: 60px;
@@ -448,35 +492,36 @@ bottom: 50px;
 
 .triangleFormation {
     margin-top: -133px;}
+
 /* Resume Box
 ---------------------*/
 .resume-box {
     /* background: #ffffff; */
     /* box-shadow: 0 0 1.25rem rgba(31, 45, 61, 0.08); */
     border-radius: 10px;
-  }
-  .resume-box ul {
+}
+.resume-box ul {
     margin: 0;
     padding: 30px 20px;
     list-style: none;
-  }
-  .resume-box li {
+}
+.resume-box li {
     position: relative;
     padding: 0 20px 0 60px;
     margin: 0 0 30px;
-  }
-  .resume-box li:last-child {
+}
+.resume-box li:last-child {
     margin-bottom: 0;
-  }
-  .resume-box li:after {
+}
+.resume-box li:after {
     content: "";
     position: absolute;
     top: 0px;
     left: 20px;
     border-left: 1px dashed #b11c1c;
     bottom: 0;
-  }
-  .resume-box .icon {
+}
+.resume-box .icon {
     width: 40px;
     height: 40px;
     position: absolute;
@@ -490,8 +535,8 @@ bottom: 50px;
     z-index: 1;
     border: 1px dashed;
     border-radius: 50%;
-  }
-  .resume-box .time {
+}
+.resume-box .time {
     background: black;
     color: #ffffff;
     font-size: 10px;
@@ -500,30 +545,32 @@ bottom: 50px;
     margin-bottom: 12px;
     border-radius: 20px;
     font-weight: 600;
-  }
-  .resume-box h5 {
+}
+.resume-box h5 {
     font-weight: 700;
     color: black;
     font-size: 16px;
     margin-bottom: 10px;
-  }
-  .resume-box p {
+}
+.resume-box p {
     margin: 0;
-  }
-  
-  .resume-box li:after {
-      content: "";
-      position: absolute;
-      top: 0px;
-      left: 20px;
-      border-left: 1px dashed #b11c1c;
-      bottom: 0;
-  }
-  .resume-box p{
+}
+
+.resume-box li:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    border-left: 1px dashed #b11c1c;
+    bottom: 0;
+}
+.resume-box p{
     font-size: 15px;
-  }
-  
-/* body{margin-top:20px;} */
+}
+
+.resume-box-experience{
+    height: 641px;
+}
 
 .section {
     padding: 100px 0;
@@ -532,21 +579,18 @@ bottom: 50px;
 /* .gray-bg {
     background-color: #f5f5f5;
 } */
+/*FIN PAGE FORMATION/EXPERIENCE------------------------------------------------------------------*/
 
 
-/*____________ FIN PAGE FORMATION/EXPERIENCE ________________*/
-
-
-/*____________ DEBUT PAGE PROJECT ___________________________ -->*/
- .project h2{
-     font-size: 65px;
- }
+/*DEBUT DEBUT PAGE PROJECT
+---------------------------
+--------------------------*/
 .project {
     height: 100vh;
     width: 100%;
     background: top / contain no-repeat url("image/Method Draw Image.png");
     background-size: 15%;
-    /* background-color: #e8e8e8; */
+    background-color: #e8e8e8;
     /* margin-bottom: 200px; */
 }
 .triangleProject{
@@ -562,31 +606,35 @@ bottom: 50px;
     border-left: 5px solid #fc5356;
     padding-left: 15px;
 }
-/*____________ FIN PAGE SKILLS ________________*/
 
-  /*____________ DEBUT PAGE CV ___________________________ -->*/
-.donwload h2{
-    font-size: 65px;
+.card{
+    width: 18rem;
 }
+/*FIN PAGE PAGE PROJECT------------------------------------------------------------------*/
+
+
+/*DEBUT DEBUT PAGE CV DOWNLOAD
+----------------------------------
+---------------------------------*/
 .donwload {
-   height: 100vh;
-   width: 100%;
-   background: top / contain no-repeat url("image/Method Draw Image.png");
-   background-size: 15%;
+    height: 100vh;
+    width: 100%;
+    background: top / contain no-repeat url("image/Method Draw Image.png");
+    background-size: 15%;
    /* background-color: #e8e8e8; */
 }
 .triangleCV{
-   margin-top: 150px;
+    margin-top: 150px;
 }
+/*FIN PAGE CV DOWNLOAD------------------------------------------------------------------*/
 
 
-/*____________ FIN PAGE CV ________________*/
-
-/*____________ DEBUT PAGE CONTACT ___________________________ -->*/
-
+/*DEBUT DEBUT PAGE CONTACT
+-----------------------------
+----------------------------*/
 .contact {
     /* height: 100vh; */
-    width: 100%;
+    /* width: 100%; */
     /* background-color: #454545e0; */
     /* background-image: url("image/triangleOrange.png");
     background-repeat: no-repeat; */
@@ -603,22 +651,39 @@ bottom: 50px;
     font-family: 'Coda';
 }
 
+#missPrenom {
+  margin-bottom: 23px;
+}
+
+/* input:invalid {
+    border: 2px dashed red;
+}
+  
+  input:valid {
+    border: 1px solid black;
+  } */
 
 /* .triangleContact{
     margin-top: 130px;
 } */
-/*____________ FIN PAGE CONTACT ________________*/
-/*____________ DEBUT PAGE FOOTER ___________________________ -->*/
+/*FIN PAGE CONTACT------------------------------------------------------------------*/
 
 
+/*DEBUT PAGE FOOTER
+-----------------------
+----------------------*/
+.text-center-copyright{
+    background-color: #b11c1c;
+}
+/*FIN PAGE FOOTER------------------------------------------------------------------*/
 
-/*____________ FIN PAGE FOOTER ________________*/
 
+/*DEBUT MEDIA QUERIES
+---------------------------------------------
+--------------------------------------------*/
 
-/*____________ MEDIA QUERIES________________*/
-
-@media screen and (max-width: 1024px) {
-    h1 {
+@media screen and (max-width: 1024px){
+    h1{
         /* font-size: 0px; */
         /* background-color:#454545e0; */
         color:  #040404;
@@ -637,20 +702,18 @@ bottom: 50px;
     .hero{
         margin-top: 26px;;
     }
-    .accueilGeneral {
-        height: 100vh;
+    .accueilGeneral{
+        /* height: 100vh; */
         /* height: 100%; */
     }
-    /* .about {
+    /* .about{
         height: 100vh;
     } */
-    .profile, .skills, .experience, .project, .contact1  {
+    .profile, .skills, .experience, .project, .contact1{
         height: 100%;
     }
-    .triangleExperience, .triangleProject, .triangleExperience, .triangleProfile{
+    .triangleProfile, .triangleSkills, .triangleExperience, .triangleFormation, .triangleProject, .triangleCV, .triangleContact{
         display: none;
     }
 }
-
-
-/*____________ FIN MEDIA QUERIES________________*/
+/*FIN MEDIA QUERIES------------------------------------------------------------------*/
