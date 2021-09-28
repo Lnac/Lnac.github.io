@@ -4,17 +4,16 @@ html{
 }
 
 body{
-    position: absolute;
+    /* position: absolute; */
     background-image: url("image/fond1.png"), url("image/shapelined\ 2.png");
-    /* width: 100%;
-    height: 100%;  */
+    width: 100%;
+    height: 100%; 
     /* background-size: cover;  */
     /* background-repeat: no-repeat; */
     /* background-color: #ebeaead4; */
     /* body{margin-top:20px;} */
     /* margin: auto;
     text-align: center; */
-
 }
 
 a { text-decoration: none !important; }
